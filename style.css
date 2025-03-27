@@ -1,3 +1,63 @@
+
+
 body{
-    background-color: beige;
+    background-color: whitesmoke;
+    font: black;
+}
+
+#navbar{
+    background-color: lightblue;
+    position: fixed;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 6rem;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+}
+
+#navbar-links{
+    margin-left: auto;
+    right: 0%;
+    display: flex;
+    justify-content: flex-end;
+    align-items:center;
+    font-size:1.5rem;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.nav-link{
+    padding: 0 1.5rem 0 1rem;
+    text-decoration: none;
+    transition: transform 0.3s ease;
+    
+}
+
+.nav-link:hover{
+    transform: translateY(2px);
+}
+
+a:visited, a:link{
+    color: black;
+}
+
+#navbar > p{
+    font-size: 1.6rem;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: left;
+    padding-left: 1rem;
+    font-weight: bold;
+}
+
+#title-page{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+#title{
+    text-align: center;
+    position: relative;
+    font-size: 3rem;
 }
