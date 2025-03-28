@@ -61,3 +61,12 @@ a:visited, a:link{
     position: relative;
     font-size: 3rem;
 }
+
+#info-page{
+    height: 100vh;
+    text-align: center;
+}
+
+#contact-page{
+    height: 100vh;
+}
