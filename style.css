@@ -74,12 +74,13 @@ a:visited, a:link{
     font-size: 3rem;
 }
 
-.info-page{
+.info-page, .info-page-2{
     height: 100vh;
     text-align: center;
     width: 100vw;
     margin: 0;
     padding: 0;
+    overflow: auto;
 }
 
 .contact-page{
@@ -93,6 +94,80 @@ a:visited, a:link{
     padding: 0;
 }
 
-#about-info-page, #index-contact-page{
+#about-info-page, #index-contact-page, #summaries-section, .info-page-2{
     background-color: var(--blue-section-background);
+    overflow:auto;
 }
+
+#summaries-gallery{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+    padding: 20px;
+}
+
+.gallery-box{
+    width: 25vh;
+    text-align: center;
+    overflow: hidden;
+    border-radius: 10px;
+    background-color: whitesmoke;
+    text-decoration: none;
+}
+
+.gallery-box img{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.gallery-box p{
+    margin-top: vh;
+    padding-left: 1vh;
+    padding-right: 1vh;
+}
+
+.gallery-box h4{
+    text-decoration: underline;
+}
+
+.summary-full{
+    display: flex;
+    flex-wrap: wrap;
+    padding:20px;
+    overflow: auto;
+}
+
+.summary-full-left, .summary-full-right{
+    flex: 1 1 45%;
+}
+
+.summary-full-left p, .summary-full-right p{
+    line-height: 1.5;
+}
+
+.summary-full-left{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 2vh;
+}
+
+.summary-full-right{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.summary-full-right img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.bridge{
+    padding: 2vh;
+}
+
+
