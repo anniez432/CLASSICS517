@@ -1,4 +1,3 @@
-
 :root{
     --blue-section-background: rgba(173, 216, 230, 0.5);
 }
@@ -152,12 +151,14 @@ a:visited, a:link{
     flex-direction: column;
     justify-content: flex-start;
     padding: 2vh;
+    text-align: left;
 }
 
 .summary-full-right{
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+    text-align: left;
 }
 
 .summary-full-right img{
@@ -170,4 +171,25 @@ a:visited, a:link{
     padding: 2vh;
 }
 
+@media (max-width: 768px){
+    #navbar{
+        flex-direction: column;
+        height: auto;
+        align-items: flex-start;
+        padding: 1rem 0;
+        align-items: center;
+        justify-content: center;
+    }
 
+    #navbar > p{
+        font-size: 1.2rem;
+        margin-bottom: 0.5rem;
+    }
+
+    #navbar-links{
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        font-size: 1.2rem;
+    }
+}
