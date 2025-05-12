@@ -86,17 +86,26 @@ a:visited, a:link{
     margin: 0;
     padding: 0;
     overflow: auto;
+    padding: 2rem;
+}
+
+#about-info-page{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+    font-size: 1.1rem;
+    line-height: 1.7rem;
 }
 
 .contact-page{
-    height: 100vh;
-    width: 100vw;
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0;
-    padding: 0;
+  height: 100vh;
+  padding-top: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 #about-info-page, #index-contact-page, #summaries-section, .info-page-2{
@@ -188,6 +197,23 @@ a:visited, a:link{
     padding: 2vh;
 }
 
+.social-icons{
+  padding-top: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  font-size: 1.3rem;
+}
+
+.social-icons a{
+  text-decoration: none;
+  transition: transform 0.3s ease;
+}
+
+.social-icons a:hover {
+  transform: translateY(-8px);
+}
 @media (max-width: 768px){
     #navbar{
         flex-direction: column;
